@@ -139,7 +139,7 @@ main {
     
 }
 
-.pessoas .erro {
+.pessoas .erro{
     outline: 2px solid var(--danger);
 }
 
