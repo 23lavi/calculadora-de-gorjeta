@@ -47,7 +47,8 @@ main {
 
 
 .conta label,
-.gorjeta label {
+.gorjeta label,
+.pessoas label {
     color: var(--green-500);
     font-weight: 700;
 }
@@ -139,11 +140,11 @@ main {
     
 }
 
-.pessoas .erro{
+.pessoas #erro-div{
     outline: 2px solid var(--danger);
 }
 
-.pessoas #erro-div {
+.pessoas .erro {
     font-size: 0.75rem;
     color: var(--danger);
     font-weight: 700;
@@ -181,7 +182,7 @@ main {
     margin-bottom: 1.25rem;
 }
 
-.resultados .gorjeta-total{
+.resultados .total{
     margin-bottom: 2rem;
 }
 
@@ -199,7 +200,7 @@ main {
 
 .conta input::-webkit-inner-spin-button,
 .pessoas input::-webkit-inner-spin-button,
-.gorjeta #outra input::-webkit-inner-spin-button{
+.gorjeta #outra::-webkit-inner-spin-button{
     display: none;
 }
 
@@ -207,13 +208,9 @@ main {
     body {
         display: flex;
         flex-direction: column;
-        min-height: 100svh;
+        min-height: 100vh;
         justify-content: center;
         gap: 5rem;
-    }
-
-    header {
-        padding: 0;
     }
 
     main{
@@ -237,7 +234,6 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
         padding: 2.5rem;
     }
 

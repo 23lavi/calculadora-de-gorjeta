@@ -18,8 +18,8 @@ function receberQuantidadePessoas(evento) {
     const paragrafoErro = document.querySelector(".pessoas #erro")
     const divErro = document.querySelector(".pessoas .input-box")
 
-    if(evento.target.value == "0") {
-        paragrafoErro.computedStyleMap.display = "block"
+    if(evento.target.value === "0") {
+        paragrafoErro.style.display = "block"
         divErro.setAttribute("id", "erro-div")
     } else {
         paragrafoErro.style.display = "none"
@@ -67,7 +67,7 @@ function calcular() {
 }
 
 const botaoLimpar = document.querySelector(".resultados button")
-botaoLimpar.addEventListener("click", botaoLimpar)
+botaoLimpar.addEventListener("click", limpar)
 
 function limpar() {
     contaInput.value = ""
