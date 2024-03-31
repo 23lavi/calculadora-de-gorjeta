@@ -15,7 +15,7 @@ function receberQuantidadePessoas(evento) {
     const paragrafoErro = document.querySelector(".pessoas #erro")
     const divErro = document.querySelector(".pessoas .input-box")
 
-    if(evento.target.value == "0"){
+    if(evento.target.value == "0") {
         paragrafoErro.computedStyleMap.display = "block"
         divErro.setAttribute("id", "erro-div")
     } else {
@@ -31,5 +31,14 @@ botoesGorjeta.forEach(botao=> {
 })
 
 function receberPorcentagem(evento) {
-    console.log(evento.target.volue)
+    botoesGorjeta.forEach (botao => {
+        botao.classList.remove("botao-ativo")
+        
+        if(botao.value === evento.target.value){
+            botao.classList.add("botao-ativo")
+        }
+    })
+
+    porcentagem = parseFloat(evento.target.value) / 100
+
 }
